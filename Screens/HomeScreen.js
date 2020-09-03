@@ -3,6 +3,7 @@ import {View,Text,StyleSheet} from 'react-native'
 import firebase from 'firebase'
 import db from '../config'
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs'
+import MyHeader from '../components/MyHeader'
 
 export const AppTabNavigator = createMaterialTopTabNavigator({
     Clothes:{

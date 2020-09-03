@@ -2,6 +2,7 @@ import * as React from 'react'
 import {View,Text,StyleSheet,TextInput,TouchableOpacity,ScrollView,KeyboardAvoidingView,Modal} from 'react-native'
 import firebase from 'firebase'
 import db from '../config'
+import MyHeader from '../components/MyHeader'
 
 export default class WelcomeScreen extends React.Component{
     constructor(){
@@ -141,6 +142,7 @@ export default class WelcomeScreen extends React.Component{
     render(){
         return(
             <View style={styles.container}>
+                <MyHeader/>
                 <View>
                     <View style={{justifyContent:'center',alignItems:'center'}}>
                         {this.showModal()}

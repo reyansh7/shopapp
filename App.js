@@ -4,7 +4,9 @@ import {createSwitchNavigator,createAppContainer} from 'react-navigation'
 import WelcomeScreen from './Screens/WelcomeScreen'
 import Splash from './Screens/Splash'
 import HomeScreen from './Screens/HomeScreen'
+
 import {AppTabNavigator} from './Screens/HomeScreen'
+import ElectronicsScreen from './Screens/ElectronicsScreen';
 
 export default class App extends React.Component{
   render(){
@@ -18,7 +20,10 @@ export default class App extends React.Component{
 const switchNavigator = createSwitchNavigator({
   Splash:{screen:Splash},
   Welcome:{screen:WelcomeScreen},
-  TopTab:{screen:AppTabNavigator}
+  HomeScreen:{screen:HomeScreen},
+  ToysScreen:{screen:ToysScreen},
+  ElectronicsScreen:{screen:ElectronicsScreen},
+  ClothesScreen:{screen:ClothesScreen}  
 })
 const AppContainer=createAppContainer(switchNavigator)
 const styles = StyleSheet.create({

@@ -8,7 +8,7 @@ export default class Splash extends React.Component{
         super(props)
         setTimeout(()=>{
             this.props.navigation.navigate('Welcome')
-        },1000)
+        },2000)
     }
 
     render(){
